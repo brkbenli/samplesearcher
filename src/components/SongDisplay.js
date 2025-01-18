@@ -27,10 +27,8 @@ const SongDisplay = ({ onSongSelect, selectedSong, currentPage, songsPerPage, di
                 console.log('API Response:', response.data); // Log the API response
 
                 const songsWithBase64Images = response.data.map((song) => {
-                    if (song.cover_art && song.cover_art.data) {
-                        const base64String = arrayBufferToBase64(song.cover_art.data);
-                        console.log('Base64 String for song:', song.name, base64String); // Log the base64 string
-                        return { ...song, cover_art: `data:image/jpeg;base64,${base64String}` };
+                    if (song.cover_art) {
+                        return { ...song};
                     } else {
                         console.error('Invalid cover data for song:', song);
                         return { ...song, cover_art: '' }; // Handle missing cover data

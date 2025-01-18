@@ -23,7 +23,7 @@ const SongDisplay = ({ onSongSelect, selectedSong, currentPage, songsPerPage, di
     useEffect(() => {
         const fetchSongs = async () => {
             try {
-                const response = await axios.get(`http://18.119.19.106/audio_tracks`);
+                const response = await axios.get(`https://api.samplesearcher.ca/audio_tracks`);
                 console.log('API Response:', response.data); // Log the API response
 
                 const songsWithBase64Images = response.data.map((song) => {

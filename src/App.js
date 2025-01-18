@@ -9,7 +9,7 @@ import NoPage from './pages/NoPage.js';
 
 
 function App() {
-  console.log("http://18.119.19.106/", "hi");
+  console.log("https://api.samplesearcher.ca", "hi");
   return (
     <div className="bg-transparent">
       <Router>

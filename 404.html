@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      var redirect = function() {
+        var pathname = window.location.pathname;
+        var hash = window.location.hash;
+        if (pathname !== '/') {
+          window.location.replace('/#' + pathname);
+        }
+      };
+      redirect();
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

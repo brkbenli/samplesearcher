@@ -1,0 +1,89 @@
+/* Navbar container */
+.navbar {
+    background-color: black; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 12px 20px; /* Padding inside the navbar */
+    display: flex; /* Flex container for alignment */
+    justify-content: space-between; /* Space between logo and menu */
+    position: relative; /* Relative positioning for absolute elements */
+  }
+  
+  /* Logo */
+  .logo {
+    width: 180px; /* Fixed width for the logo */
+  }
+  
+  /* Menu items */
+
+
+  .menu {
+    display: flex; /* Flex container for menu items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    position: absolute; /* Absolute positioning for menu items */
+    top: 50%; /* Centering vertically */
+    left: 50%; /* Centering horizontally */
+    transform: translate(-50%, -50%); /* Centering trick */
+  }
+  
+  .menu ul {
+    list-style-type: none; /* Remove list styles */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flex container for list items */
+  }
+  
+  .menu li {
+    margin-right: 20px; /* Spacing between menu items */
+  }
+  
+  .menu li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+  
+  .menu li a {
+    display: flex; /* Align icon and text vertically */
+    align-items: center; /* Center items vertically */
+    color: #ffffff; /* White text color for menu items */
+    font-size: 18px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .menu li a:hover {
+    color: #e53e3e; /* Red color on hover */
+  }
+  
+  /* User section */
+  .user-section {
+    z-index: 10; /* Ensure it's on top of other elements */
+  }
+  
+  .user-section .user-info {
+    background-color: #ffffff; /* White background for user info */
+    padding: 8px 16px; /* Padding */
+    margin-right: 10px; /* Right margin */
+  }
+  
+  .user-section .user-info .username {
+    font-weight: bold; /* Bold username */
+    color: #000000; /* Black text color */
+  }
+  
+  .user-section .logout-btn {
+    background-color: #e53e3e; /* Red background color */
+    color: #ffffff; /* White text color */
+    font-weight: bold; /* Bold text */
+    padding: 8px 16px; /* Padding */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .user-section .logout-btn:hover {
+    background-color: #c53030; /* Darker red on hover */
+  }
+  
+  .user-section .login-link {
+    margin-left: 10px; /* Adjust as needed */
+  }

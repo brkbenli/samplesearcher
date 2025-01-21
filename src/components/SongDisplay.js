@@ -54,8 +54,8 @@ const SongDisplay = ({ onSongSelect, selectedSong, currentPage, songsPerPage, di
             {currentSongImage && (
                 <div style={{
                     position: 'fixed',
-                    bottom: '95px',  // Adjust this value to ensure it sits just above the song player
-                    left: '15px',  // Position it on the left side of the page
+                    bottom: '105px',  // Adjust this value to ensure it sits just above the song player
+                    left: '20px',  // Position it on the left side of the page
                     backgroundColor: 'white',
                     padding: '10px',
                     borderRadius: '10px',
